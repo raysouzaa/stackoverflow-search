@@ -3,7 +3,7 @@ import sys
 import requests
 
 # O objetivo dessa aplicação é otimizar uma busca por informações no Stack
-# Overflow. Isso é feito automatizando um busca via linha de comandos usando
+# Overflow. Isso é feito automatizando uma busca via linha de comandos usando
 # diretamente a API do StackExchange.
 # Os resultados são visualizados diretamente no terminal e os links podem ser
 # usados para acessar as respostas na página do https:// stackoverflow.com 
@@ -41,7 +41,7 @@ def main():
         json = r.json()
         items = json['items']
 
-        print('As', len(items), 'perguntas com melhor score\n')
+        print('As', len(items), 'primeras perguntas com melhor score\n')
 
         # Iteracao pelos objetos retornados
         for item in items:
